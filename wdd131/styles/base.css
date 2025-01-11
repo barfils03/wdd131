@@ -1,0 +1,115 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mise en page de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* En-tête */
+/* Style pour l'en-tête */
+/* Style pour l'en-tête */
+header {
+    background-color: #004a8f;  /* Bleu foncé pour l'en-tête */
+    color: white;  /* Texte en blanc */
+    text-align: center;  /* Centrer le texte */
+    padding: 20px 0;  /* Espacement autour du texte */
+}
+
+/* Style pour le titre h1 */
+header h1 {
+    font-size: 2.5rem;  /* Taille du texte du titre */
+    font-family: 'Arial', sans-serif;  /* Police de caractères */
+    margin-bottom: 15px;  /* Espacement sous le titre */
+}
+
+/* Style pour la navigation */
+nav {
+    background-color: #f1f1f1;  /* Couleur de fond claire pour la navigation */
+    padding: 10px 0;  /* Espacement vertical */
+}
+
+/* Style pour la liste de navigation */
+nav ul {
+    display: flex;  /* Utilisation de flexbox pour une disposition en ligne */
+    justify-content: center;  /* Centrer les éléments horizontalement */
+    list-style-type: none;  /* Retirer les puces */
+    padding: 0;  /* Retirer l'espacement */
+    margin: 0;  /* Retirer l'espacement */
+}
+
+/* Style pour les éléments de la liste */
+nav ul li {
+    margin: 0 15px;  /* Espacement horizontal entre les éléments du menu */
+}
+
+/* Style pour les liens de navigation */
+nav ul li a {
+    color: #004a8f;  /* Texte des liens en bleu foncé */
+    text-decoration: none;  /* Retirer la décoration des liens */
+    font-size: 1.1rem;  /* Taille du texte des liens */
+    font-weight: bold;  /* Mettre en gras */
+    transition: color 0.3s;  /* Animation pour la couleur des liens au survol */
+}
+
+/* Style au survol des liens */
+nav ul li a:hover {
+    color: #ffcc00;  /* Couleur dorée au survol */
+    text-decoration: underline;  /* Souligner le lien au survol */
+}
+
+
+
+/* Section principale */
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.card-img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    float: right;
+    margin-right: 20px
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
