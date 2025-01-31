@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udogigs</title>
+    <meta name="author" content="UDO DAVID">
+    <meta name="description" content="udogigs">
+    <link rel="stylesheet" href="styles/udogigs.css">
+    <script src="script/udogigs.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>MicroTaskHub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Jobs</button>
+        <div class="dropdown-content">
+          <a href="jobs.html">Jobs</a>
+          <a href="myjobs.html">My Jobs</a>
+          <a href="findjobs.html">Find Jobs</a>
+        </div>
+      </div>
+      <a href="profile.html">Profile</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="profile">
+      <h2>Profile Information</h2>
+      <div id="profile-details"></div>
+
+      <h3>Profile Photo</h3>
+      <img id="profile-photo" src="default-avatar.png" alt="Profile Photo" width="150"><br>
+      <input type="file" id="upload-photo" accept="image/*"><br>
+      <button onclick="uploadPhoto()">Upload a new photo</button>
+
+      <h3>Name</h3>
+      <form id="update-name-form" onsubmit="updateName(event)">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br>
+        <button type="submit">Update name</button>
+      </form>
+
+      <h3>Email and Password</h3>
+      <p>Email address: <span id="email-address"></span></p>
+      <form id="update-email-form" onsubmit="updateEmail(event)">
+        <label for="newEmail">New Email:</label>
+        <input type="email" id="newEmail" required><br>
+        <button type="submit">Update email</button>
+      </form>
+      <form id="update-password-form" onsubmit="updatePassword(event)">
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" required><br>
+        <button type="submit">Change password</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MicroTaskHub</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
